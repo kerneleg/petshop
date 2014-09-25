@@ -52,7 +52,7 @@ namespace Dr.Mustafa_Clinic
                 lmob.Text = custTable.Rows[0][2].ToString();
                 laddress.Text = custTable.Rows[0][3].ToString();
                 lage.Text = custTable.Rows[0][4].ToString();
-                if (custTable.Rows[0][5].ToString() == "True")
+                if (custTable.Rows[0][5].ToString() == "False")
                 {
                     lgender.Text = "Male";
                 }

@@ -53,7 +53,7 @@ namespace Dr.Mustafa_Clinic
                 owner_mobile.Text = custTable.Rows[0][2].ToString();
                 owner_addres.Text = custTable.Rows[0][3].ToString();
                 owner_age.Text = custTable.Rows[0][4].ToString();
-                if (custTable.Rows[0][5].ToString() == "True")
+                if (custTable.Rows[0][5].ToString() == "False")
                 {
                     owner_gender.Text = "Male";
                 }

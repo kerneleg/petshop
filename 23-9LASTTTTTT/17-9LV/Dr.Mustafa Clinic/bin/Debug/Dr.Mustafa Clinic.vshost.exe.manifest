@@ -70,7 +70,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bVPaOvbZY/XwbqwX8axLtJom1dE=</dsig:DigestValue>
+        <dsig:DigestValue>95+SW8KvCo/F6TmatYJrsQjeujY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qA1nleEMtNwXkuUxvPpcvCghtRM=</dsig:DigestValue>
+      <dsig:DigestValue>GyZ7SOLl0/HB+0XXftkCWAw/Lsg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="851968" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>W9gMJJHjygHPtBngR4mcwX6ZYII=</dsig:DigestValue>
+      <dsig:DigestValue>vMes0sZmn+S4ZZGsnLnIOR4IbwE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="dog.ico" size="67646">
@@ -113,13 +113,13 @@
       <dsig:DigestValue>Tw7gB6Tw8XXGsOX9AxMFyPxB4Sg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Dr.Mustafa Clinic.exe.config" size="1269">
+  <file name="Dr.Mustafa Clinic.exe.config" size="1266">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>mwWhE182SuZSsVP0YdSbTfMH9Uw=</dsig:DigestValue>
+      <dsig:DigestValue>q3yXl6NNyAmsaRIxImUU7bESE/o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Moon-wallpaper.jpg" size="224941">
