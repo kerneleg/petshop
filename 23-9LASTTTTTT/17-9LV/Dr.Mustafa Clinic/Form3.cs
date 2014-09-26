@@ -99,7 +99,10 @@ namespace Dr.Mustafa_Clinic
         }
         private void Close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("do you need to close this window", "window close", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void vaccin_button_Click(object sender, EventArgs e)
