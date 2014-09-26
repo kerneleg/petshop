@@ -70,7 +70,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>95+SW8KvCo/F6TmatYJrsQjeujY=</dsig:DigestValue>
+        <dsig:DigestValue>0rS+xscrAv0W+lIIQNFBlxLAZjU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GyZ7SOLl0/HB+0XXftkCWAw/Lsg=</dsig:DigestValue>
+      <dsig:DigestValue>Youc1qkH8xzI6ULgf3XwPOywLT0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="851968" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>vMes0sZmn+S4ZZGsnLnIOR4IbwE=</dsig:DigestValue>
+      <dsig:DigestValue>O3fIagHEbtD40kQnf3fU8NcwnYs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="dog.ico" size="67646">

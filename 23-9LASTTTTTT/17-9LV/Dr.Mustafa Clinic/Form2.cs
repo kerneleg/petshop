@@ -78,7 +78,12 @@ namespace Dr.Mustafa_Clinic
 
         private void close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("are you really need to close this ?", "Close client window", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+
+                this.Close();
+            }
+
         }
 
         private void new_pet_Click(object sender, EventArgs e)
