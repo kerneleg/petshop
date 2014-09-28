@@ -12,6 +12,7 @@ namespace Dr.Mustafa_Clinic
 {
     public partial class Form1 : Form
     {
+        messaging messag;
         Form2 newownerform;
         reminder schedule;
         Ownersearch osearch;
@@ -273,6 +274,8 @@ namespace Dr.Mustafa_Clinic
         private void button4_Click(object sender, EventArgs e)
         {
             //send the message
+            messag = new messaging();
+            messag.Show();
         }
 
 

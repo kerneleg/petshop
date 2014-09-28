@@ -106,6 +106,12 @@
     <Compile Include="Form3.designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="messaging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messaging.Designer.cs">
+      <DependentUpon>messaging.cs</DependentUpon>
+    </Compile>
     <Compile Include="owner_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messaging.resx">
+      <DependentUpon>messaging.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="owner_form.resx">
       <DependentUpon>owner_form.cs</DependentUpon>
