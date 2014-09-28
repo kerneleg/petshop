@@ -4,14 +4,14 @@
   <description asmv2:publisher="Dr.Mustafa Clinic" asmv2:product="Dr.Mustafa Clinic" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Dr.Mustafa Clinic.exe.manifest" size="7007">
+    <dependentAssembly dependencyType="install" codebase="Dr.Mustafa Clinic.exe.manifest" size="7385">
       <assemblyIdentity name="Dr.Mustafa Clinic.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5OUoSPocdORWyeW5i7Pa1sUPB90=</dsig:DigestValue>
+        <dsig:DigestValue>cOlxHIqQTR11jQFSBrCIJ57TDD8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -25,6 +25,8 @@ namespace Dr.Mustafa_Clinic
         int Fwellcom4 = 0; 
         int btngroupflag = 0;
         Timer t = new Timer();
+        
+        NotifyIcon icon = new NotifyIcon();
 
         SqlConnection con;
         SqlCommand command;
@@ -37,6 +39,10 @@ namespace Dr.Mustafa_Clinic
             xbtngroup = Width / 2 - 70;
             ybtngroup = -mainbtngroup.Height;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            icon.Icon = new System.Drawing.Icon(@"C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\Resources\dog.ico");
+            icon.Visible = true;
+            icon.Text = "Pet Clinic";
+            icon.ShowBalloonTip(30000, "Pet Clinic Notification", "Pet Clinic Notification", ToolTipIcon.None);
         }
         void messaging()
         {
@@ -80,6 +86,7 @@ namespace Dr.Mustafa_Clinic
             }
             else
             {
+                icon.Visible = false;
                 Application.Exit();
             }
         }
@@ -181,6 +188,9 @@ namespace Dr.Mustafa_Clinic
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
+            
+        
             schedule = new reminder();
             schedule.Show();
         }

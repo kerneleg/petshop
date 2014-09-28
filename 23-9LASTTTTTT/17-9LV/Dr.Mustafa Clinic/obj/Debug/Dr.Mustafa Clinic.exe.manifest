@@ -70,7 +70,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ciFeuEIteksBjnPOJoMj9aOK3t0=</dsig:DigestValue>
+        <dsig:DigestValue>9QxXdqYZak9yJNicDiINc1zIloc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>oBr5CbvQFQD1oKHJp8GcR1mikbY=</dsig:DigestValue>
+      <dsig:DigestValue>UhdRL50A6SrRixfsLG0xH5kVOIQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="851968" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>/rPhflp0PCH21EuTJ+7nHjl4+0E=</dsig:DigestValue>
+      <dsig:DigestValue>MigDTevhoXpokmmBm5lnQWRsmMk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="dog.ico" size="67646">
@@ -120,6 +120,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>q3yXl6NNyAmsaRIxImUU7bESE/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\dog.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Tw7gB6Tw8XXGsOX9AxMFyPxB4Sg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\Moon-wallpaper.jpg" size="224941">

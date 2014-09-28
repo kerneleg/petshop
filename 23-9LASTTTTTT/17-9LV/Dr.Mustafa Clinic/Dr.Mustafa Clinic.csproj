@@ -232,6 +232,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="dog.ico" />
+    <Content Include="Resources\dog.ico" />
     <Content Include="Resources\Moon-wallpaper.jpg" />
     <None Include="Resources\Search2.png" />
     <None Include="Resources\Search1.png" />
