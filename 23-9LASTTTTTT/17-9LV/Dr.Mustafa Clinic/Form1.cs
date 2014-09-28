@@ -14,7 +14,7 @@ namespace Dr.Mustafa_Clinic
     {
         messaging messag;
         Form2 newownerform;
-        reminder schedule;
+        reminder schedule=new reminder();
         Ownersearch osearch;
         Petsearch psearch;
         aboutus aboutfrm;
@@ -26,9 +26,7 @@ namespace Dr.Mustafa_Clinic
         int Fwellcom4 = 0; 
         int btngroupflag = 0;
         Timer t = new Timer();
-        
-        NotifyIcon icon = new NotifyIcon();
-
+        int notifyflag = 0;
         SqlConnection con;
         SqlCommand command;
         SqlDataReader reader;
@@ -40,10 +38,12 @@ namespace Dr.Mustafa_Clinic
             xbtngroup = Width / 2 - 70;
             ybtngroup = -mainbtngroup.Height;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            icon.Icon = new System.Drawing.Icon(@"C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\Resources\dog.ico");
-            icon.Visible = true;
-            icon.Text = "Pet Clinic";
-            icon.ShowBalloonTip(30000, "Pet Clinic Notification", "Pet Clinic Notification", ToolTipIcon.None);
+
+            notifyIcon1.Icon = new System.Drawing.Icon(@"C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\Resources\dog.ico");
+            notifyIcon1.Visible = true;
+            notifyIcon1.Text = "Pet Clinic";
+            int xxxx = schedule.showvaccins()-1;
+            notifyIcon1.ShowBalloonTip(30000, "You have " + xxxx + " New Notifications", "Clich Here to see details", ToolTipIcon.Info);
         }
         void messaging()
         {
@@ -87,7 +87,7 @@ namespace Dr.Mustafa_Clinic
             }
             else
             {
-                icon.Visible = false;
+                notifyIcon1.Visible = false;
                 Application.Exit();
             }
         }
@@ -278,10 +278,12 @@ namespace Dr.Mustafa_Clinic
             messag.Show();
         }
 
-
-
-        
-
+        private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
+        {
+            notifyflag = 1;
+            schedule = new reminder(notifyflag);
+            schedule.Show();
+        }
 
     }
 }

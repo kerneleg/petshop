@@ -320,3 +320,4 @@ D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csp
 D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.exe.manifest
 D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.application
 C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.messaging.resources
+C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csprojResolveAssemblyReference.cache

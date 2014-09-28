@@ -19,13 +19,29 @@ namespace Dr.Mustafa_Clinic
         string conString;
         DataSet ds;
         DataTable sTable;
+        
         public reminder()
         {
             InitializeComponent();
             vaccin_table.Visible = false;
+
+        }
+        public reminder(int flag)
+        {
+            if (flag == 1)
+            {
+                InitializeComponent();
+                showvaccins();
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            showvaccins();
+        }
+
+        public int showvaccins()
+        {
+
             vaccin_table.Visible = true;
             this.monthCalendar1.MaxSelectionCount = 1;
             DateTime day = new DateTime();
@@ -33,7 +49,7 @@ namespace Dr.Mustafa_Clinic
             conString = Properties.Settings.Default.Database1ConnectionString;
             StringBuilder Sqlquery = new StringBuilder();
             day.ToString(new CultureInfo("en-US"));
-            
+
             Sqlquery.Append("select Vaccins.Id,Vaccins.type,Vaccins.comments,Pet.Name,Customers.Name,Customers.Mob from Vaccins join Pet on Vaccins.pet_ID = Pet.Petid join Customers on Vaccins.Custid = Customers.Customerid where Vaccins.dates= '" + day + "' ");
 
             SqlConnection con = new SqlConnection(conString);
@@ -54,6 +70,8 @@ namespace Dr.Mustafa_Clinic
             vaccin_table.Columns[3].HeaderText = "Pet Name";
             vaccin_table.Columns[4].HeaderText = "Customer Name";
             vaccin_table.Columns[5].HeaderText = "Customer Mobile";
+
+            return vaccin_table.Rows.Count;
         }
 
         private void button2_Click(object sender, EventArgs e)
