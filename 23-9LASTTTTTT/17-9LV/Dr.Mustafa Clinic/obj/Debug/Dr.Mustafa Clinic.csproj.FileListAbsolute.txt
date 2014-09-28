@@ -297,3 +297,26 @@ C:\Users\win 7\Desktop\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\D
 C:\Users\win 7\Desktop\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csproj.GenerateResource.Cache
 C:\Users\win 7\Desktop\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.exe.manifest
 C:\Users\win 7\Desktop\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.application
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Dr.Mustafa Clinic.exe.config
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.exe
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.pdb
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Resources\land.png
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Dr.Mustafa Clinic.exe.manifest
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Dr.Mustafa Clinic.application
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Dr.Mustafa Clinic.exe
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\bin\Debug\Dr.Mustafa Clinic.pdb
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csprojResolveAssemblyReference.cache
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.aboutus.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Form3.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.owner_form.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Ownersearch.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Petsearch.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.pet_form.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.reminder.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Form1.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Form2.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.Properties.Resources.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.vaccination.resources
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csproj.GenerateResource.Cache
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.exe.manifest
+D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.application

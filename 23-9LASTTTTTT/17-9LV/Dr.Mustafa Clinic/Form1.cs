@@ -270,6 +270,11 @@ namespace Dr.Mustafa_Clinic
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //send the message
+        }
+
 
 
         

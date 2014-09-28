@@ -63,14 +63,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dr.Mustafa Clinic.exe" size="6516224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dr.Mustafa Clinic.exe" size="6516736">
       <assemblyIdentity name="Dr.Mustafa Clinic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9QxXdqYZak9yJNicDiINc1zIloc=</dsig:DigestValue>
+        <dsig:DigestValue>m8UVVjFqMfgQW+OtrO3BgFvYDPs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>UhdRL50A6SrRixfsLG0xH5kVOIQ=</dsig:DigestValue>
+      <dsig:DigestValue>kGb55LuQqXnrfFcIFGWYfPpR+3E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="851968" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>MigDTevhoXpokmmBm5lnQWRsmMk=</dsig:DigestValue>
+      <dsig:DigestValue>mwN/vQ7heIenv6myds4JgreCUDc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="dog.ico" size="67646">
