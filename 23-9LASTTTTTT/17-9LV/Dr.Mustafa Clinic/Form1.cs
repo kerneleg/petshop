@@ -41,7 +41,7 @@ namespace Dr.Mustafa_Clinic
             ybtngroup = -mainbtngroup.Height;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 
-            notifyIcon1.Icon = new System.Drawing.Icon(@"D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\dog.ico");
+            notifyIcon1.Icon = new System.Drawing.Icon(@"C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\dog.ico");
             notifyIcon1.Visible = true;
             notifyIcon1.Text = "Pet Clinic";
             int xxxx = schedule.showvaccins() - 1;

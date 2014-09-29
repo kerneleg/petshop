@@ -323,3 +323,4 @@ C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustaf
 C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa Clinic.csprojResolveAssemblyReference.cache
 D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.messaging.resources
 D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.contacts.resources
+C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\obj\Debug\Dr.Mustafa_Clinic.contacts.resources
