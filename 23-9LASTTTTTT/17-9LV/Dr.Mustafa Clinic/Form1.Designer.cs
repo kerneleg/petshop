@@ -45,7 +45,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+<<<<<<< HEAD
             this.button6 = new System.Windows.Forms.Button();
+=======
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+>>>>>>> origin/master
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mainbtngroup.SuspendLayout();
@@ -226,6 +230,7 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.BalloonTipClicked += new System.EventHandler(this.notifyIcon1_BalloonTipClicked);
             // 
+<<<<<<< HEAD
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(98, 118);
@@ -235,6 +240,13 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+=======
+            // timer3
+            // 
+            this.timer3.Enabled = true;
+            this.timer3.Interval = 900000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+>>>>>>> origin/master
             // 
             // Form1
             // 
@@ -284,7 +296,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button6;
+=======
+        private System.Windows.Forms.Timer timer3;
+>>>>>>> origin/master
 
     }
 }

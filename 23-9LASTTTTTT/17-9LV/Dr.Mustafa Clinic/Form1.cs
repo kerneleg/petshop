@@ -12,9 +12,9 @@ namespace Dr.Mustafa_Clinic
 {
     public partial class Form1 : Form
     {
-        messaging messag;
+        messaging message;
         Form2 newownerform;
-        reminder schedule=new reminder();
+        reminder schedule = new reminder();
         Ownersearch osearch;
         Petsearch psearch;
         aboutus aboutfrm;
@@ -23,7 +23,7 @@ namespace Dr.Mustafa_Clinic
         int Fwellcom1 = 0;
         int Fwellcom2 = 0;
         int Fwellcom3 = 0;
-        int Fwellcom4 = 0; 
+        int Fwellcom4 = 0;
         int btngroupflag = 0;
         Timer t = new Timer();
         int notifyflag = 0;
@@ -41,10 +41,10 @@ namespace Dr.Mustafa_Clinic
             ybtngroup = -mainbtngroup.Height;
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 
-            notifyIcon1.Icon = new System.Drawing.Icon(@"C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\Resources\dog.ico");
+            notifyIcon1.Icon = new System.Drawing.Icon(@"D:\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\dog.ico");
             notifyIcon1.Visible = true;
             notifyIcon1.Text = "Pet Clinic";
-            int xxxx = schedule.showvaccins()-1;
+            int xxxx = schedule.showvaccins() - 1;
             notifyIcon1.ShowBalloonTip(30000, "You have " + xxxx + " New Notifications", "Clich Here to see details", ToolTipIcon.Info);
         }
         void messaging()
@@ -54,7 +54,7 @@ namespace Dr.Mustafa_Clinic
             conString = Properties.Settings.Default.Database1ConnectionString;
             con = new SqlConnection(conString);
             con.Open();
-            query = "select Custid,Dates from Vaccins where Dates = '" + date + "' ";
+            query = "select Custid,Dates from Vaccins where Dates = '" + date + "' and flag!= 'True' ";
             command = new SqlCommand(query, con);
             reader = command.ExecuteReader();
             while (reader.Read())
@@ -62,6 +62,18 @@ namespace Dr.Mustafa_Clinic
                 customer_list.Add(reader.GetInt32(0));
             }
             con.Close();
+            //send the message to customer_list
+            ////////////////change the condition of vaccin record flag
+            int i;
+            for (i = 0; i < customer_list.Count; i++)
+            {
+                con = new SqlConnection(conString);
+                con.Open();
+                query = "update Vaccins set flag = 'True' where Dates = '" + date + "' ";
+                command = new SqlCommand(query, con);
+                command.ExecuteNonQuery();
+                con.Close();
+            }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -79,9 +91,9 @@ namespace Dr.Mustafa_Clinic
                 cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
                 return cp;
             }
-            
+
         }
-        
+
         private void button5_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to Exit", "App Close", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
@@ -99,8 +111,8 @@ namespace Dr.Mustafa_Clinic
             newownerform = new Form2();
             //newpetfrm.MdiParent = this;
             newownerform.BringToFront();
-            newownerform.Show();
-            }
+            newownerform.ShowDialog();
+        }
         void wellcom()
         {
             //say Hi To The Dr On Time & display BackGround
@@ -142,7 +154,7 @@ namespace Dr.Mustafa_Clinic
             /////////////////////////////
             if (DateTime.Now.Hour < 24 && DateTime.Now.Hour >= 19)
             {
-                
+
                 label2.Text = "Good evening Dr.Mustafa";
                 if (Fwellcom3 == 0)
                 {
@@ -177,7 +189,7 @@ namespace Dr.Mustafa_Clinic
 
         private void btngrouplocation()
         {
-            int x = (this.Width / 2) - (mainbtngroup.Size.Width /2);
+            int x = (this.Width / 2) - (mainbtngroup.Size.Width / 2);
             mainbtngroup.Location = new Point(x);
         }
 
@@ -191,11 +203,11 @@ namespace Dr.Mustafa_Clinic
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            
-        
+
+
+
             schedule = new reminder();
-            schedule.Show();
+            schedule.ShowDialog();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -205,7 +217,7 @@ namespace Dr.Mustafa_Clinic
         }
         private void vaccin_Click(object sender, EventArgs e)
         {
-            }
+        }
         void animate()
         {
 
@@ -250,13 +262,13 @@ namespace Dr.Mustafa_Clinic
             {
 
                 osearch = new Ownersearch(textBox1.Text);
-                osearch.Show();
+                osearch.ShowDialog();
 
             }
             if (comboBox1.SelectedIndex == 1)
             {
                 psearch = new Petsearch(textBox1.Text);
-                psearch.Show();
+                psearch.ShowDialog();
 
             }
         }
@@ -265,26 +277,30 @@ namespace Dr.Mustafa_Clinic
         {
             animate();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             aboutfrm = new aboutus();
-            aboutfrm.Show();
+            aboutfrm.ShowDialog();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //send the message
-            messag = new messaging();
-            messag.Show();
+            message = new messaging();
+            message.ShowDialog();
         }
 
         private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
         {
             notifyflag = 1;
             schedule = new reminder(notifyflag);
-            schedule.Show();
+            schedule.ShowDialog();
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            messaging();
         }
 
         private void button6_Click(object sender, EventArgs e)

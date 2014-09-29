@@ -27,14 +27,17 @@ namespace Dr.Mustafa_Clinic
         public pet_form(string number, string OwnerID)
         {
             InitializeComponent();
+            owner_id = OwnerID;
+            pet_id = number;
+            refresh();
+        }
+        void refresh()
+        {
             try
-            {
-                owner_id = OwnerID;
-
-                pet_id = number;
+            {              
                 conString = Properties.Settings.Default.Database1ConnectionString;
                 Sqlquery = new StringBuilder();
-                Sqlquery.Append("SELECT * FROM Pet WHERE Petid='" + number + "' ");
+                Sqlquery.Append("SELECT * FROM Pet WHERE Petid='" + pet_id + "' ");
                 con = new SqlConnection(conString);
                 con.Open();
                 sCommand = new SqlCommand(Sqlquery.ToString(), con);
@@ -49,7 +52,7 @@ namespace Dr.Mustafa_Clinic
                 weeks.Text = petTable.Rows[0][3].ToString();
                 months.Text = petTable.Rows[0][4].ToString();
                 years.Text = petTable.Rows[0][5].ToString();
-                if (petTable.Rows[0][6].ToString() == "True")
+                if (petTable.Rows[0][6].ToString() == "False")
                 {
                     sex.Text = "Male";
                 }
@@ -111,9 +114,7 @@ namespace Dr.Mustafa_Clinic
             }
             catch (Exception err)
             {
-
                 MessageBox.Show(err.Message);
-
             }
         }
         private void close_Click(object sender, EventArgs e)
@@ -124,7 +125,8 @@ namespace Dr.Mustafa_Clinic
         private void edit_Click(object sender, EventArgs e)
         {
             edit_pet = new Form3(pet_id,owner_id);
-            edit_pet.Show();
+            edit_pet.ShowDialog();
+            refresh();
         }
 
         private void delete_Click(object sender, EventArgs e)
@@ -150,7 +152,8 @@ namespace Dr.Mustafa_Clinic
         private void vaccin_edit_Click(object sender, EventArgs e)
         {
             vac = new vaccination(owner_id, pet_id);
-            vac.Show();
+            vac.ShowDialog();
+            refresh();
         }
     }
 }

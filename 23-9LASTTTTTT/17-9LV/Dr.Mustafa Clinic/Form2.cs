@@ -91,7 +91,7 @@ namespace Dr.Mustafa_Clinic
             if (save_flag == 1)
             {
                 newpetfrm = new Form3(ownerId);
-                newpetfrm.Show();
+                newpetfrm.ShowDialog();
             }
             else
             {
@@ -103,29 +103,6 @@ namespace Dr.Mustafa_Clinic
             if ((owner_name.Text == "") || (owner_mobile.Text == ""))
             {
                 MessageBox.Show("Please fill the mandatory fields"); 
-                return 0;
-            }
-            int n;
-            bool test, test2, test3, test4;
-            test = int.TryParse(owner_age.Text, out n);
-            test2 = int.TryParse(owner_mobile.Text, out n);
-            test3 = int.TryParse(owner_phone.Text, out n);
-            test4 = int.TryParse(unpaid.Text, out n);
-            if (owner_age.Text == "")
-            {
-                test = true;
-            }
-            if (owner_phone.Text == "")
-            {
-                test3 = true;
-            }
-            if (unpaid.Text == "")
-            {
-                test4 = true;
-            }
-            if ((test == false) || (test2 == false) || (test3 == false) || (test4 == false))
-            {
-                MessageBox.Show("Erorr in filling the fields");
                 return 0;
             }
             return 1;
@@ -195,6 +172,38 @@ namespace Dr.Mustafa_Clinic
                 {
                     MessageBox.Show(err.Message);
                 }
+            }
+        }
+
+        private void owner_age_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void owner_mobile_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void owner_phone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void unpaid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
             }
         }
     }

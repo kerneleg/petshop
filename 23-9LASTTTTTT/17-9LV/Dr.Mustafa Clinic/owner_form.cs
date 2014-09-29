@@ -21,23 +21,23 @@ namespace Dr.Mustafa_Clinic
         DataSet ds;
         DataTable custTable;
         DataTable petTable;
-        string cust_id, sql;
+        string cust_id;
         Form2 edit;
         pet_form pet;
         StringBuilder Sqlquery;
-        
-        public owner_form()
+        public owner_form(string number)
         {
             InitializeComponent();
+            cust_id = number;
+            refresh();
         }
-        public void owner_number(string number)
+        void refresh()
         {
             try
             {
-
                 conString = Properties.Settings.Default.Database1ConnectionString;
                 Sqlquery = new StringBuilder();
-                Sqlquery.Append("SELECT * FROM Customers WHERE Customerid='" + number + "' ");
+                Sqlquery.Append("SELECT * FROM Customers WHERE Customerid='" + cust_id + "' ");
 
                 con = new SqlConnection(conString);
                 con.Open();
@@ -48,7 +48,6 @@ namespace Dr.Mustafa_Clinic
                 sAdapter.Fill(ds, "Cust");
                 custTable = ds.Tables["Cust"];
                 con.Close();
-                cust_id = number;
                 lname.Text = custTable.Rows[0][1].ToString();
                 lmob.Text = custTable.Rows[0][2].ToString();
                 laddress.Text = custTable.Rows[0][3].ToString();
@@ -85,14 +84,9 @@ namespace Dr.Mustafa_Clinic
             }
             catch (Exception err)
             {
-
                 MessageBox.Show(err.Message);
-
             }
-
-
         }
-
         private void cbut_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -101,7 +95,8 @@ namespace Dr.Mustafa_Clinic
         private void editing_Click(object sender, EventArgs e)
         {
             edit = new Form2(cust_id);
-            edit.Show();
+            edit.ShowDialog();
+            refresh();
         }
 
         private void Pet_Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -109,7 +104,8 @@ namespace Dr.Mustafa_Clinic
             if (Pet_Table.Rows[e.RowIndex].Cells[1].Value.ToString() != "")
             {
                 pet = new pet_form(Pet_Table.Rows[e.RowIndex].Cells[1].Value.ToString(), cust_id);
-                pet.Show();
+                pet.ShowDialog();
+                refresh();
             }
         }
 

@@ -69,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(6, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Pet Name";
+            this.label1.Text = "Pet Name *";
             // 
             // label2
             // 
@@ -80,9 +80,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(6, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 18);
+            this.label2.Size = new System.Drawing.Size(47, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Age";
+            this.label2.Text = "Age *";
             // 
             // label3
             // 
@@ -91,9 +91,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(6, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 18);
+            this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Type";
+            this.label3.Text = "Type *";
             // 
             // label4
             // 
@@ -102,9 +102,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(6, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 18);
+            this.label4.Size = new System.Drawing.Size(61, 18);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Breed";
+            this.label4.Text = "Breed *";
             // 
             // label5
             // 
@@ -254,6 +254,7 @@
             this.days.Size = new System.Drawing.Size(45, 20);
             this.days.TabIndex = 5;
             this.days.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.days.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.days_KeyPress);
             // 
             // weeks
             // 
@@ -262,6 +263,7 @@
             this.weeks.Size = new System.Drawing.Size(45, 20);
             this.weeks.TabIndex = 4;
             this.weeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.weeks.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.weeks_KeyPress);
             // 
             // months
             // 
@@ -270,6 +272,7 @@
             this.months.Size = new System.Drawing.Size(45, 20);
             this.months.TabIndex = 3;
             this.months.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.months.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.months_KeyPress);
             // 
             // years
             // 
@@ -278,6 +281,7 @@
             this.years.Size = new System.Drawing.Size(45, 20);
             this.years.TabIndex = 2;
             this.years.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.years.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.years_KeyPress);
             // 
             // sex
             // 

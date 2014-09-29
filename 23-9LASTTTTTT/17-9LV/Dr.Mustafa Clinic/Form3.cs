@@ -60,7 +60,7 @@ namespace Dr.Mustafa_Clinic
                 weeks.Text = petTable.Rows[0][3].ToString();
                 months.Text = petTable.Rows[0][4].ToString();
                 years.Text = petTable.Rows[0][5].ToString();
-                if (petTable.Rows[0][6].ToString() == "True")
+                if (petTable.Rows[0][6].ToString() == "False")
                 {
                     sex.Text = "Male";
                 }
@@ -129,7 +129,7 @@ namespace Dr.Mustafa_Clinic
                     }
                     con.Close();
                     vac = new vaccination(ownerID, ID);
-                    vac.Show();
+                    vac.ShowDialog();
                 }
             }
             else
@@ -147,33 +147,6 @@ namespace Dr.Mustafa_Clinic
             if ((years.Text == "") && (months.Text == "") && (weeks.Text == "") && (days.Text == ""))
             {
                 MessageBox.Show("Please fill the mandatory fields");
-                return 0;
-            }
-            int n;
-            bool test, test2, test3, test4;
-            test = int.TryParse(years.Text, out n);
-            test2 = int.TryParse(months.Text, out n);
-            test3 = int.TryParse(weeks.Text, out n);
-            test4 = int.TryParse(days.Text, out n);
-            if (years.Text == "")
-            {
-                test = true;
-            }
-            if (months.Text == "")
-            {
-                test2 = true;
-            }
-            if (weeks.Text == "")
-            {
-                test3 = true;
-            }
-            if (days.Text == "")
-            {
-                test4 = true;
-            }
-            if ((test == false) || (test2 == false) || (test3 == false) || (test4 == false))
-            {
-                MessageBox.Show("Erorr in filling the fields");
                 return 0;
             }
             return 1;
@@ -258,6 +231,38 @@ namespace Dr.Mustafa_Clinic
 
                     MessageBox.Show(err.Message);
                 }
+            }
+        }
+
+        private void years_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void months_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void weeks_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void days_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
             }
         }
     }
