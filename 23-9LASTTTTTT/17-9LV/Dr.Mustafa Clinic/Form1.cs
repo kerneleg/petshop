@@ -30,8 +30,10 @@ namespace Dr.Mustafa_Clinic
         SqlConnection con;
         SqlCommand command;
         SqlDataReader reader;
-        string conString;
         String query;
+
+        string conString;
+        
         public Form1()
         {
             InitializeComponent();
@@ -283,6 +285,18 @@ namespace Dr.Mustafa_Clinic
             notifyflag = 1;
             schedule = new reminder(notifyflag);
             schedule.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            conString = Properties.Settings.Default.Database1ConnectionString;
+            con = new SqlConnection(conString);
+            con.Open();
+            command = new SqlCommand(@"backup database [C:\Users\Ahmed\Kernel\23-9LASTTTTTT\17-9LV\Dr.Mustafa Clinic\Database1.mdf] to DISK = 'C:\\AdventureWorks.BAK'", con);
+            command.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("The support of the database was successfully performed", "Back", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
     }
