@@ -20,16 +20,19 @@ namespace Dr.Mustafa_Clinic
         string conString;
         DataSet ds;
         DataTable sTable;
-
-
-        public Ownersearch(string name)
+        string name;
+        public Ownersearch(string temp_name)
         {
             InitializeComponent();
+            name = temp_name;
+            refresh();
+        }
+        void refresh()
+        {
             if (name == "")
             {
                 try
                 {
-
                     conString = Properties.Settings.Default.Database1ConnectionString;
                     objConnect.connection_string = conString;
                     string sql = "SELECT Customerid,Name,Mob,Unpaid FROM Customers";
@@ -50,16 +53,14 @@ namespace Dr.Mustafa_Clinic
                 }
                 catch (Exception err)
                 {
-
                     MessageBox.Show(err.Message);
-
                 }
             }
             else
             {
                 conString = Properties.Settings.Default.Database1ConnectionString;
                 objConnect.connection_string = conString;
-                string sql = "SELECT Customerid,Name,Mob,Unpaid FROM Customers where Name LIKE @test ";
+                string sql = "SELECT Customerid,Name,Mob,Unpaid FROM Customers where Name LIKE @test  ";
                 SqlConnection con = new SqlConnection(conString);
                 con.Open();
                 sCommand = new SqlCommand(sql, con);
@@ -76,7 +77,6 @@ namespace Dr.Mustafa_Clinic
                 OwnSearchDatagrid.Columns[1].Visible = false;
             }
         }
-
         private void Close_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -86,9 +86,9 @@ namespace Dr.Mustafa_Clinic
         {
             if (e.RowIndex < OwnSearchDatagrid.Rows.Count - 1)
             {
-                client = new owner_form();
-                client.owner_number(OwnSearchDatagrid.Rows[e.RowIndex].Cells[1].Value.ToString());
-                client.Show();
+                client = new owner_form(OwnSearchDatagrid.Rows[e.RowIndex].Cells[1].Value.ToString());
+                client.ShowDialog();
+                refresh();
             }
         }
         private void pictureBox1_Click_1(object sender, EventArgs e)

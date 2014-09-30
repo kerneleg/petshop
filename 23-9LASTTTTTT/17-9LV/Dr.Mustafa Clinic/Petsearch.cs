@@ -18,7 +18,7 @@ namespace Dr.Mustafa_Clinic
         SqlDataAdapter sAdapter;
         SqlCommandBuilder sBuilder;
         string conString;
-        DataSet ds = new DataSet();
+        DataSet ds;
         DataTable sTable;
         DataTable dtCloned;
         SqlConnection con, con2;
@@ -26,9 +26,15 @@ namespace Dr.Mustafa_Clinic
         SqlDataReader reader;
         //string conString;
         String query, query2;
-        public Petsearch(string name)
+        string name;
+        public Petsearch(string temp_name)
         {
             InitializeComponent();
+            name = temp_name;
+            refresh();
+        }
+        void refresh()
+        {
             ///////// this week vaccinations
             conString = Properties.Settings.Default.Database1ConnectionString;
             con = new SqlConnection(conString);
@@ -86,6 +92,7 @@ namespace Dr.Mustafa_Clinic
                     sCommand = new SqlCommand(sql, con);
                     sAdapter = new SqlDataAdapter(sCommand);
                     sBuilder = new SqlCommandBuilder(sAdapter);
+                    ds = new DataSet();
                     sAdapter.Fill(ds, "Pet");
                     sTable = ds.Tables["Pet"];
                     con.Close();
@@ -119,6 +126,7 @@ namespace Dr.Mustafa_Clinic
                 sCommand.Parameters.AddWithValue("@test", name);
                 sAdapter = new SqlDataAdapter(sCommand);
                 sBuilder = new SqlCommandBuilder(sAdapter);
+                ds = new DataSet();
                 sAdapter.Fill(ds, "Pet");
                 sTable = ds.Tables["Pet"];
                 con.Close();
@@ -402,7 +410,8 @@ namespace Dr.Mustafa_Clinic
             if (e.RowIndex < PetSearchdataGrid.Rows.Count - 1)
             {
                 pet = new pet_form(PetSearchdataGrid.Rows[e.RowIndex].Cells[1].Value.ToString(), PetSearchdataGrid.Rows[e.RowIndex].Cells[2].Value.ToString());
-                pet.Show();
+                pet.ShowDialog();
+                refresh();
             }
         }
     }

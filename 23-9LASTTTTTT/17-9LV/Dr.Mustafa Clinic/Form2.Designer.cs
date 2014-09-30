@@ -80,18 +80,19 @@
             this.owner_gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.owner_gender.Location = new System.Drawing.Point(125, 92);
+            this.owner_gender.Location = new System.Drawing.Point(135, 92);
             this.owner_gender.Name = "owner_gender";
-            this.owner_gender.Size = new System.Drawing.Size(197, 26);
+            this.owner_gender.Size = new System.Drawing.Size(187, 26);
             this.owner_gender.TabIndex = 3;
             // 
             // unpaid
             // 
-            this.unpaid.Location = new System.Drawing.Point(125, 237);
+            this.unpaid.Location = new System.Drawing.Point(135, 237);
             this.unpaid.Name = "unpaid";
-            this.unpaid.Size = new System.Drawing.Size(197, 26);
+            this.unpaid.Size = new System.Drawing.Size(187, 26);
             this.unpaid.TabIndex = 7;
             this.unpaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.unpaid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.unpaid_KeyPress);
             // 
             // label7
             // 
@@ -106,41 +107,44 @@
             // 
             // owner_addres
             // 
-            this.owner_addres.Location = new System.Drawing.Point(125, 201);
+            this.owner_addres.Location = new System.Drawing.Point(135, 201);
             this.owner_addres.Name = "owner_addres";
-            this.owner_addres.Size = new System.Drawing.Size(197, 26);
+            this.owner_addres.Size = new System.Drawing.Size(187, 26);
             this.owner_addres.TabIndex = 6;
             this.owner_addres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // owner_phone
             // 
-            this.owner_phone.Location = new System.Drawing.Point(125, 165);
+            this.owner_phone.Location = new System.Drawing.Point(135, 165);
             this.owner_phone.Name = "owner_phone";
-            this.owner_phone.Size = new System.Drawing.Size(197, 26);
+            this.owner_phone.Size = new System.Drawing.Size(187, 26);
             this.owner_phone.TabIndex = 5;
             this.owner_phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.owner_phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.owner_phone_KeyPress);
             // 
             // owner_mobile
             // 
-            this.owner_mobile.Location = new System.Drawing.Point(125, 129);
+            this.owner_mobile.Location = new System.Drawing.Point(135, 129);
             this.owner_mobile.Name = "owner_mobile";
-            this.owner_mobile.Size = new System.Drawing.Size(197, 26);
+            this.owner_mobile.Size = new System.Drawing.Size(187, 26);
             this.owner_mobile.TabIndex = 4;
             this.owner_mobile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.owner_mobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.owner_mobile_KeyPress);
             // 
             // owner_age
             // 
-            this.owner_age.Location = new System.Drawing.Point(125, 60);
+            this.owner_age.Location = new System.Drawing.Point(135, 60);
             this.owner_age.Name = "owner_age";
-            this.owner_age.Size = new System.Drawing.Size(197, 26);
+            this.owner_age.Size = new System.Drawing.Size(187, 26);
             this.owner_age.TabIndex = 2;
             this.owner_age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.owner_age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.owner_age_KeyPress);
             // 
             // owner_name
             // 
-            this.owner_name.Location = new System.Drawing.Point(125, 24);
+            this.owner_name.Location = new System.Drawing.Point(135, 24);
             this.owner_name.Name = "owner_name";
-            this.owner_name.Size = new System.Drawing.Size(197, 26);
+            this.owner_name.Size = new System.Drawing.Size(187, 26);
             this.owner_name.TabIndex = 1;
             this.owner_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -172,9 +176,9 @@
             this.label4.Location = new System.Drawing.Point(6, 132);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 18);
+            this.label4.Size = new System.Drawing.Size(124, 18);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Mobile Number";
+            this.label4.Text = "Mobile Number *";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -205,9 +209,9 @@
             this.label1.Location = new System.Drawing.Point(6, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.Size = new System.Drawing.Size(60, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
+            this.label1.Text = "Name *";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // save

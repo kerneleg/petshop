@@ -94,6 +94,12 @@
     <Compile Include="aboutus.Designer.cs">
       <DependentUpon>aboutus.cs</DependentUpon>
     </Compile>
+    <Compile Include="addcontacr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcontacr.Designer.cs">
+      <DependentUpon>addcontacr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="aboutus.resx">
       <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addcontacr.resx">
+      <DependentUpon>addcontacr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>

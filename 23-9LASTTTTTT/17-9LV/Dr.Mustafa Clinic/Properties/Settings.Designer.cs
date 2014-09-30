@@ -26,8 +26,8 @@ namespace Dr.Mustafa_Clinic.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\Ahmed\\Kernel\\23-9LASTTTTTT\\" +
-            "17-9LV\\Dr.Mustafa Clinic\\Database1.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=D:\\Kernel\\23-9LASTTTTTT\\17-9LV\\Dr.Mu" +
+            "stafa Clinic\\Database1.mdf;Integrated Security=True")]
         public string Database1ConnectionString {
             get {
                 return ((string)(this["Database1ConnectionString"]));
